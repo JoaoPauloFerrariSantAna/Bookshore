@@ -1,0 +1,112 @@
+#main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#submit-btn-area {
+	display: flex;
+}
+
+#submit-btn {
+	margin: auto;
+	border-radius: 2em;
+	padding: 0.5em;
+}
+
+#form-account {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#server-resp {
+	text-align: center;
+}
+
+#navbar {
+	display: flex;
+}
+
+#register-header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px;
+}
+
+.header {
+	font-family: var(--title-font);
+}
+
+.header-navbar {
+	display: flex;
+}
+
+.header-navbar li {
+	margin-left: 10px;
+}
+
+.header-navbar li a {
+	display: block;
+	padding: var(--list-padding);
+}
+
+.link  {
+	text-decoration: none;
+	color: black;
+}
+
+.label {
+	padding-bottom: 0.5rem;
+	font-family: var(--normal-txt-font);
+	font-optical-sizing: auto;
+	font-weight: 500;
+
+}
+
+.form-part {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form-acc {
+	border: 1px solid black;
+}
+
+.form-acc,
+.form-part {
+	margin: var(--form-default-space);
+}
+
+.password-area {
+	display: flex;
+	justify-content: center;
+}
+
+.header-list {
+	list-style: none;
+}
+
+.img-disabled {
+	display: none;
+}
+
+.img-enabled {
+	display: inline-block;
+}
+
+.toggled-password,
+.untoggled-password {
+	border: 1px solid black;
+	border-radius: 2rem;
+	cursor: pointer;
+	margin-left: 0.5rem;
+}
+
+.forgot-to-acc {
+	text-align: center;
+}

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; }
+
+:root {
+	--title-font: "Exo 2", sans-serif;
+	--normal-txt-font: "Lora", serif;
+	--footer-txt-font: "Bree Serif", serif;
+	--form-default-space: 2em;
+	--list-padding: 0.7em;
+	--list-margin: 10px;
+}
+
+body,
+h1, 
+h2, 
+h3, 
+input, 
+button,
+p {
+	padding: 0px;
+	margin: 0px;
+}
+
+.footer { 
+	font-family: var(--footer-txt-font);
+	font-weight: 400;
+	color: black;
+	text-align: center;
+}

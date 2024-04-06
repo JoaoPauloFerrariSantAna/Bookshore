@@ -1,0 +1,42 @@
+a {
+	text-decoration: none;
+	color: black;
+}
+
+footer {
+	text-align: center;
+	background-color: black;
+}
+
+
+#username {
+	font-size: 1.2rem;
+}
+
+.header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.menu {
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.menu li {
+	margin: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.special-link {
+	color: blue;
+}
+
+.footer-text {
+	color: white;
+}

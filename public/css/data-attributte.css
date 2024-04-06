@@ -1,0 +1,20 @@
+[data-btn-active="disabled"] {
+	/*TODO: find a better way*/
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+[data-btn-active="enabled"] {
+	cursor: pointer;
+	opacity: 1;
+}
+
+[data-invalid-msg="hidden"] {
+	display: none;
+}
+
+[data-invalid-msg="show"] {
+	font-size: 15px;
+	display: block;
+	color: red;
+}

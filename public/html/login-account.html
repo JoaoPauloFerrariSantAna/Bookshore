@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<title>Bookshore - Login</title>
+		<link rel="stylesheet" type="text/css" href="../css/general.css" />
+		<link rel="stylesheet" type="text/css" href="../css/form.css" />
+		<link rel="stylesheet" type="text/css" href="../css/data-attributte.css" />
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header id="register-header" class="header">
+			<img src="#" alt="Bookshore logo">
+			<h1>Login into Account</h1>
+
+			<nav id="header-navbar">
+
+				<ol class="header-navbar">
+
+					<li class="header-list"><a href="#" class="link">About Us</a></li>
+					<li class="header-list"><a href="./index.html" class="link">Home</a></li>
+				</ol>
+
+			</nav>
+
+		</header>
+
+		<main id="main">
+
+			<form id="form-account" class="form-acc" autocomplete="off" action="../../teste.php" method="post">
+
+				<div class="username-password">
+
+					<div class="form-part">
+						<label class="label" for="username">Username</label>
+						<input type="text" id="username" name="username" data-user-info="username" placeholder="Your name" autocomplete="off" autofocus/>
+
+						<span id="username-msg" data-invalid-msg="hidden"></span>
+					</div>
+
+					<div class="form-part">
+
+						<div class="password-area">
+							<label class="label" for="password">Password</label>
+							<input type="password" id="password" name="password" data-user-info="password" placeholder="Password here" autocomplete="off" />
+
+							<img src="../img/eye-open.svg" id="eye-open" class="toggled-password" alt="Show password">
+
+							<img src="../img/eye-closed.svg" id="eye-closed" class="img-disabled untoggled-password" alt="Hide password">
+
+						</div>
+
+						<span id="password-msg" data-invalid-msg="hidden"></span>
+					</div>
+
+				</div>
+
+				<div class="email">
+
+					<div class="form-part">
+
+						<label class="label" for="email">E-mail</label>
+						<input type="email" id="email" name="email" data-user-info="email" placeholder="Your email address" autocomplete="off"/>
+
+						<span id="email-msg" data-invalid-msg="hidden">Invalid email!</span>
+
+					</div>
+
+					<div id="submit-btn-area">
+
+						<button id="submit-btn" data-btn-active="disabled" type="submit">Submit Information</button>
+
+						<p id="server-resp"></p>
+
+					</div>
+
+
+				</div>
+
+			</form>
+
+			<div class="forgot-to-acc">
+
+				<p>Have you forgot to register? <a href="./create-account.html">Click here!</a></p>
+
+			</div>
+	
+		</main>
+
+		<footer class="footer">
+			<p>Copyright 2024 John Petrovich &copy;</p>
+		</footer>
+
+		<script type="text/javascript" src="../js/svg-treatment.js"></script>
+		<script type="module" src="../js/email-validation.js"></script>
+		<script type="module" src="../js/login-client.js"></script>
+	</body>
+</html>

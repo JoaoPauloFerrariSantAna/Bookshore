@@ -1,0 +1,28 @@
+li a { 
+	text-decoration: none;
+	color: black;
+}
+
+#footer { background-color: black; }
+
+#navbar-main ol { list-style: none; }
+
+#navbar-main > ol {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+}
+
+.title {
+	font-family: var(--title-font);
+	font-weight: 300;
+	font-optical-sizing: auto;
+	text-align: center;
+}
+
+.txt {
+	padding: 1rem;
+	font-family: var(--normal-txt-font);
+	font-weight: 500;
+	font-style: normal;
+}
