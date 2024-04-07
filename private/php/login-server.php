@@ -4,12 +4,8 @@
 
 include("db-common-queries.php");
 include("validation.php");
-# include("deal-json.php");
-#
+include("deal-json.php");
 
-print_r($_POST);
-
-exit(0);
 $username	= validate_data($formated_json["username"]);
 $password	= validate_data($formated_json["password"]);
 
