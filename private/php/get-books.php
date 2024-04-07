@@ -50,7 +50,8 @@ function insert_book(int $uid, string $book_name, int $pages_read, int $total_pa
 }
 
 update_books_read($_SESSION["username"]);
-// TODO: It is saying "user_id" is null, fix it
+
+// TODO: It is saying "user_id" is null, fix it later
 insert_book($_SESSION["user_id"], $book_name, $pages_read, $total_pages);
 
 ?>
