@@ -15,18 +15,15 @@ function prepLoginRequest(submitEvent) {
 	const rawUserData	= document.querySelectorAll("[data-user-info]");
 	const formatedInfo	= formatUserData(rawUserData);
 	const sanitizedInfo	= escapeBadChars(formatedInfo);
-	const requestData	= createReq(rawUserData, [ rawUserData[0].value, rawUserData[1].value] , AMOUNT_ELEMENTS.TWO);
+	const requestData	= createReq(rawUserData, sanitizedInfo, AMOUNT_ELEMENTS.TWO);
 
-	submitEvent.preventDefault();
+	const requestLocation = "../../private/php/login-server.php";
 
 	// if there is no empty fields
 	if(checkForEmptyFields(rawUserData, sanitizedInfo)) {
 		submitEvent.preventDefault();
 	}
 
-	if(mkReq(requestData, "../../teste.php", true) === REQUEST_ERR.LOGIN_ERR) {
-		submitEvent.preventDefault();
-	}
-
+	mkReq(requestData, requestLocation, true) === REQUEST_ERR.LOGIN_ERR);
 	submitEvent.preventDefault();
 }
