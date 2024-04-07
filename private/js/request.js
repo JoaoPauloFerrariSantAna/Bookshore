@@ -1,4 +1,5 @@
 import { REQUEST_ERR } from "../../public/js/enums.js"
+
 /**
  * @typedef {string} JSON
  * @typedef {number} ENUM
