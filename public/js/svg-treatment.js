@@ -1,8 +1,5 @@
-
 document.getElementById("eye-open").addEventListener("click", showPass);
 document.getElementById("eye-closed").addEventListener("click", hidePass);
-
-
 
 function showPass() {
 	const passwordField = document.getElementById("password");
