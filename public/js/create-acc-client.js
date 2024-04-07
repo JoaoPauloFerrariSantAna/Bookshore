@@ -18,8 +18,10 @@ function prepAccRequest(submitEvent) {
 	const sanitizedInfo	= escapeBadChars(formatedInfo);
 	const requestData	= createReq(rawUserData, sanitizedInfo, AMOUNT_ELEMENTS.ALL);
 
+	const requestPath = "../../private/php/create-acc-server.php";
+
 	if(!checkForEmptyFields(rawUserData, sanitizedInfo)) {
-		mkReq(requestData, "../../private/php/create-acc-server.php", false);
+		mkReq(requestData, requestPath, false);
 		submitEvent.preventDefault();
 	}
 

@@ -19,7 +19,6 @@ function prepLoginRequest(submitEvent) {
 
 	const requestLocation = "../../private/php/login-server.php";
 
-	// if there is no empty fields
 	if(checkForEmptyFields(rawUserData, sanitizedInfo)) {
 		submitEvent.preventDefault();
 	}
