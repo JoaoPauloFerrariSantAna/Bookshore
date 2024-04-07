@@ -1,6 +1,10 @@
 <?php
 
+session_start();
+
 include("connect.php");
+
+// TODO: Change some mysqli statements to mysqli prepare
 
 $book_name	= $_POST["book-name"];
 $pages_read	= $_POST["pages-read"];
@@ -11,8 +15,17 @@ function update_books_read(string $uname): void {
 	$tbl_template		= $uname."s_books";
 	$new_amount_books	= $_SESSION["books_read"] + 1;
 
-	$update_query		= "UPDATE ".$tbl_template." SET books_read = ".$new_amount_books;
+	$update_books	= "UPDATE ".$tbl_template." SET books_read = ".$new_amount_books;
+	$result		= $mysql->query($update_books);
+
+	$result->free();
+	$mysql->close();
+
+	$mysql = NULL;
+
+
 /*
+ * // for when everything is already working
  * $mysql		= connect_db();
  * update_stmt		= $mysql->prepare("UPDATE ".$template." SET books_read = ?");
  *
@@ -37,6 +50,7 @@ function insert_book(int $uid, string $book_name, int $pages_read, int $total_pa
 }
 
 update_books_read($_SESSION["username"]);
+// TODO: It is saying "user_id" is null, fix it
 insert_book($_SESSION["user_id"], $book_name, $pages_read, $total_pages);
 
 ?>
